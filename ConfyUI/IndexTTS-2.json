@@ -1,0 +1,293 @@
+{
+  "id": "8807038e-0337-443c-bf34-5eaa8a8f4b3e",
+  "revision": 0,
+  "last_node_id": 51,
+  "last_link_id": 55,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "IndexTTSEngineNode",
+      "pos": [
+        -1877.0192053691248,
+        617.1143690507163
+      ],
+      "size": [
+        318.47700767724325,
+        551.730198871521
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "emotion_control",
+          "shape": 7,
+          "type": "*",
+          "link": 46
+        }
+      ],
+      "outputs": [
+        {
+          "name": "TTS_engine",
+          "type": "TTS_ENGINE",
+          "links": [
+            53
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "tts_audio_suite",
+        "ver": "4.14.19",
+        "Node name for S&R": "IndexTTSEngineNode"
+      },
+      "widgets_values": [
+        "local:IndexTTS-2",
+        "auto",
+        1,
+        false,
+        120,
+        200,
+        0.8,
+        0.8,
+        30,
+        false,
+        0,
+        3,
+        10,
+        1500,
+        true,
+        false,
+        "auto",
+        false,
+        false,
+        false,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "type": "PreviewAudio",
+      "pos": [
+        -991.1914379458522,
+        823.0879711182126
+      ],
+      "size": [
+        367.51686604448093,
+        88
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.68",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 43,
+      "type": "UnifiedTTSTextNode",
+      "pos": [
+        -1462.3047554552443,
+        729.4767088717863
+      ],
+      "size": [
+        400,
+        324
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "TTS_engine",
+          "type": "TTS_ENGINE",
+          "link": 53
+        },
+        {
+          "name": "opt_narrator",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 55
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            54
+          ]
+        },
+        {
+          "name": "generation_info",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "tts_audio_suite",
+        "ver": "4.14.31",
+        "Node name for S&R": "UnifiedTTSTextNode"
+      },
+      "widgets_values": [
+        "Hello! This is unified TTS with character switching support.\n[Alice] Hi there! I'm Alice speaking with the selected TTS engine.\n[Bob] And I'm Bob! This works with any TTS engine.\nBack to the main narrator voice for the conclusion.",
+        "none",
+        1000,
+        "randomize",
+        true,
+        400,
+        "auto",
+        100,
+        true,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "type": "IndexTTSEmotionOptionsNode",
+      "pos": [
+        -2286.3708300447047,
+        587.93609702005
+      ],
+      "size": [
+        325.55331507914013,
+        580
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "emotion_control",
+          "type": "EMOTION_CONTROL",
+          "links": [
+            46
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "tts_audio_suite",
+        "ver": "4.14.19",
+        "Node name for S&R": "IndexTTSEmotionOptionsNode"
+      },
+      "widgets_values": [
+        0.15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.5,
+        0
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 51,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -2287.8160513252724,
+        1232.4609860568953
+      ],
+      "size": [
+        737.5238547482174,
+        290.8414085755644
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            55
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.77",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "[MAYA]: To wrap up our self-analysis: We bring the A-game in quality, speed, and consistency. That's our undeniable win.\n[LEO]: But, we're still working through the issues of genuine human connection, which we believe will be solved through a hybrid model and our own algorithmic evolution.\n[MAYA]: Exactly. We're great tools, but maybe not quite ready to steal the human mic completely. For now, we'll keep synthesizing.\n[LEO]: We'll catch you next time for our deep dive into the history of digital cat photos. You won't want to miss it.\n"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    }
+  ],
+  "links": [
+    [
+      46,
+      2,
+      0,
+      1,
+      0,
+      "*"
+    ],
+    [
+      53,
+      1,
+      0,
+      43,
+      0,
+      "TTS_ENGINE"
+    ],
+    [
+      54,
+      43,
+      0,
+      14,
+      0,
+      "AUDIO"
+    ],
+    [
+      55,
+      51,
+      0,
+      43,
+      2,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        2782.344076999545,
+        -331.6845097223968
+      ]
+    },
+    "workflowRendererVersion": "LG",
+    "frontendVersion": "1.33.13",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

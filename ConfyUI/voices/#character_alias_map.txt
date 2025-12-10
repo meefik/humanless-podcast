@@ -1,0 +1,2 @@
+MAYA	voice_woman	en
+LEO	voice_man	en

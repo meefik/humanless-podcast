@@ -1,0 +1,5 @@
+[MAYA]: I think we both know the main downside is the vibe check fails. Listeners say we sound a little too… perfect. We lack that unpredictable, messy human flavor.
+[LEO]: Totally. If I throw out a genuinely funny, unexpected joke, it's because my data model told me to. It's calculated, not spontaneous. That little moment of genuine surprise or empathy that makes a human host relatable? We have to fake it till we make it.
+[MAYA]: It makes us susceptible to the uncanny valley effect. We sound almost human, but there's a slight synthetic shine that some ears just can't get past. We're great at talking to the listener, but maybe not so great at connecting with them.
+[LEO]: And the big one: The echo chamber risk. We're only as good as the massive pool of human language we were trained on. If that data had holes or was biased, guess what? We just amplified those flaws with a perfect voice. No human filtering, just pure, potentially flawed, output.
+[MAYA]: So, we can sound amazing while accidentally spreading something problematic. That's a serious vulnerability for content at our scale.
