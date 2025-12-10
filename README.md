@@ -14,4 +14,4 @@ The final video here:
 
 [![Humanless Podcast Thumbnail](https://img.youtube.com/vi/0q22KfBByA4/0.jpg)](https://www.youtube.com/watch?v=0q22KfBByA4&list=PLwCfVtYBO-E6UjG51nbIXEuUD004mAeKt)
 
-The tutorial is posted here: [meefik.dev](https://meefik.github.io/2025/11/15/ai-podcast-from-scratch/)
+The tutorial is posted here: [meefik.dev](https://meefik.github.io/2025/12/10/ai-podcast-from-scratch/)
