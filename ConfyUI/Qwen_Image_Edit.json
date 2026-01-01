@@ -1,9 +1,120 @@
 {
   "id": "6e2a8e4a-5767-4589-87f8-7756cb574a7f",
   "revision": 0,
-  "last_node_id": 21,
-  "last_link_id": 6,
+  "last_node_id": 22,
+  "last_link_id": 9,
   "nodes": [
+    {
+      "id": 4,
+      "type": "SaveImage",
+      "pos": [
+        1524.391314573477,
+        178.16850737746563
+      ],
+      "size": [
+        567.1019873675427,
+        492.5611795635624
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.65",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "LoadImage",
+      "pos": [
+        646.8423540955118,
+        623.4099041656373
+      ],
+      "size": [
+        274.080078125,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.77",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "face_man.png",
+        "image"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "LoadImage",
+      "pos": [
+        946.2681353455118,
+        624.4880291656373
+      ],
+      "size": [
+        274.080078125,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.77",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "face_woman.png",
+        "image"
+      ]
+    },
     {
       "id": 5,
       "type": "LoadImage",
@@ -16,7 +127,7 @@
         378.12109375
       ],
       "flags": {},
-      "order": 0,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -81,13 +192,13 @@
           "label": "image2 (optional)",
           "name": "image2",
           "type": "IMAGE",
-          "link": 5
+          "link": 9
         },
         {
           "label": "image3 (optional)",
           "name": "image3",
           "type": "IMAGE",
-          "link": 6
+          "link": 8
         }
       ],
       "outputs": [
@@ -112,117 +223,6 @@
       "widgets_values": [
         "The man and woman sit at the table and look toward the camera. The man places his hands on the table. The woman places her hands on the keyboard of a laptop. They smile a little."
       ]
-    },
-    {
-      "id": 4,
-      "type": "SaveImage",
-      "pos": [
-        1524.391314573477,
-        178.16850737746563
-      ],
-      "size": [
-        567.1019873675427,
-        492.5611795635624
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.65",
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
-      "id": 20,
-      "type": "LoadImage",
-      "pos": [
-        646.8423540955118,
-        623.4099041656373
-      ],
-      "size": [
-        274.080078125,
-        314
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            5
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.77",
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "face_man.png",
-        "image"
-      ]
-    },
-    {
-      "id": 21,
-      "type": "LoadImage",
-      "pos": [
-        946.2681353455118,
-        624.4880291656373
-      ],
-      "size": [
-        274.080078125,
-        314
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            6
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.77",
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "face_woman.png",
-        "image"
-      ]
     }
   ],
   "links": [
@@ -243,19 +243,19 @@
       "IMAGE"
     ],
     [
-      5,
-      20,
-      0,
-      6,
-      1,
-      "IMAGE"
-    ],
-    [
-      6,
+      8,
       21,
       0,
       6,
       2,
+      "IMAGE"
+    ],
+    [
+      9,
+      20,
+      0,
+      6,
+      1,
       "IMAGE"
     ]
   ],
@@ -279,7 +279,7 @@
           "bounding": [
             -575.33984375,
             478.80859375,
-            132.71875,
+            139.22265625,
             120
           ]
         },
@@ -302,7 +302,7 @@
             ],
             "label": "image_input",
             "pos": [
-              -462.62109375,
+              -456.1171875,
               498.80859375
             ]
           },
@@ -316,7 +316,7 @@
             ],
             "label": "image2 (optional)",
             "pos": [
-              -462.62109375,
+              -456.1171875,
               518.80859375
             ]
           },
@@ -330,7 +330,7 @@
             ],
             "label": "image3 (optional)",
             "pos": [
-              -462.62109375,
+              -456.1171875,
               538.80859375
             ]
           },
@@ -342,7 +342,7 @@
               244
             ],
             "pos": [
-              -462.62109375,
+              -456.1171875,
               558.80859375
             ]
           }
@@ -615,7 +615,7 @@
             ],
             "size": [
               210,
-              82
+              106
             ],
             "flags": {},
             "order": 14,
@@ -660,6 +660,7 @@
             },
             "widgets_values": [
               "lanczos",
+              1,
               1
             ]
           },
@@ -801,30 +802,6 @@
             "bgcolor": "#653"
           },
           {
-            "id": 96,
-            "type": "MarkdownNote",
-            "pos": [
-              -239.26857094308548,
-              627.4237553504787
-            ],
-            "size": [
-              294.43359375,
-              126.81640625
-            ],
-            "flags": {},
-            "order": 4,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [],
-            "title": "Note: Image scale",
-            "properties": {},
-            "widgets_values": [
-              "This node is to avoid bad output results caused by excessively large input image sizes. Because when we input one image, we use the size of that input image.\n\nThe **TextEncodeQwenImageEditPlus** will scale your input to 1024×104 pixels. We use the size of your first input image. This node is to avoid having an input image size that is too large (such as 3000×3000 pixels), which could bring bad results."
-            ],
-            "color": "#432",
-            "bgcolor": "#653"
-          },
-          {
             "id": 111,
             "type": "TextEncodeQwenImageEditPlus",
             "pos": [
@@ -832,7 +809,7 @@
               -100.296875
             ],
             "size": [
-              348.0435546875,
+              366.917578125,
               168
             ],
             "flags": {},
@@ -913,7 +890,7 @@
               112.08203125
             ],
             "size": [
-              357.26328125,
+              372.0513671875,
               199.8984375
             ],
             "flags": {},
@@ -1051,7 +1028,7 @@
               106
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1104,7 +1081,7 @@
               550
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -1130,7 +1107,7 @@
               82
             ],
             "flags": {},
-            "order": 7,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1234,14 +1211,38 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              130264455966959,
+              460931401482145,
               "randomize",
               8,
               1,
-              "lcm",
+              "euler",
               "simple",
               1
             ]
+          },
+          {
+            "id": 96,
+            "type": "MarkdownNote",
+            "pos": [
+              -263.2451334430855,
+              663.8339116004787
+            ],
+            "size": [
+              294.43359375,
+              126.81640625
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Note: Image scale",
+            "properties": {},
+            "widgets_values": [
+              "This node is to avoid bad output results caused by excessively large input image sizes. Because when we input one image, we use the size of that input image.\n\nThe **TextEncodeQwenImageEditPlus** will scale your input to 1024×104 pixels. We use the size of your first input image. This node is to avoid having an input image size that is too large (such as 3000×3000 pixels), which could bring bad results."
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
           }
         ],
         "groups": [],
@@ -1458,12 +1459,12 @@
     "ds": {
       "scale": 1,
       "offset": [
-        -82.74479648924716,
-        181.42027236475587
+        -197.46857773924717,
+        143.8528036147561
       ]
     },
     "workflowRendererVersion": "LG",
-    "frontendVersion": "1.33.13",
+    "frontendVersion": "1.35.9",
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,

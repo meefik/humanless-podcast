@@ -8,12 +8,12 @@
       "id": 60,
       "type": "SaveImage",
       "pos": [
-        659.6119923555757,
-        -220.86220971765715
+        658.3698048555757,
+        -232.26064721765715
       ],
       "size": [
-        560.0598958333334,
-        490.08854166666674
+        708.1380208333334,
+        552.3346354166667
       ],
       "flags": {},
       "order": 1,
@@ -84,8 +84,10 @@
         1280,
         720,
         1,
-        "The cozy podcast room features a wide table and two chairs behind it. In the center of the table sits a microphone with a cord. To the right of the table is a laptop with small white \"AI\" text glowing on its lid. To the left is a coffee mug with a small penguin printed on it. In the background, there is a plant, a bookshelf, a lamp, and an abstract iceberg painting. The edge of the window is visible on the left. On the wall behind it, a small transparent sign with backlight mounted to a wide brick wall reads \"meefik.dev\"."
-      ]
+        "The cozy podcast room features a wide table and two chairs behind it. In the center of the table sits a microphone with a cord. To the right of the table is a laptop with small white 'AI' text glowing on its lid. To the left is a coffee mug with a small penguin printed on it. In the background, there is a plant, a bookshelf, a lamp, and an abstract iceberg painting. The edge of the window is visible on the left. On the wall behind it, a small transparent sign with backlight mounted to a wide brick wall reads 'meefik.dev'."
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
     }
   ],
   "links": [
@@ -411,7 +413,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              "The cozy podcast room features a wide table and two chairs behind it. In the center of the table sits a microphone with a cord. To the right of the table is a laptop with small white \"AI\" text glowing on its lid. To the left is a coffee mug with a small penguin printed on it. In the background, there is a plant, a bookshelf, a lamp, and an abstract iceberg painting. The edge of the window is visible on the left. On the wall behind it, a small transparent sign with backlight mounted to a wide brick wall reads \"meefik.dev\"."
+              "The cozy podcast room features a wide table and two chairs behind it. In the center of the table sits a microphone with a cord. To the right of the table is a laptop with small white 'AI' text glowing on its lid. To the left is a coffee mug with a small penguin printed on it. In the background, there is a plant, a bookshelf, a lamp, and an abstract iceberg painting. The edge of the window is visible on the left. On the wall behind it, a small transparent sign with backlight mounted to a wide brick wall reads 'meefik.dev'."
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -860,7 +862,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              947085139763500,
+              72163453276185,
               "randomize",
               8,
               1,
@@ -1038,18 +1040,18 @@
     "ds": {
       "scale": 1,
       "offset": [
-        520.6811148887773,
-        703.8538667066559
+        415.6654898887773,
+        638.1663667066559
       ]
     },
-    "frontendVersion": "1.33.13",
+    "frontendVersion": "1.35.9",
+    "workflowRendererVersion": "LG",
     "ue_links": [],
     "links_added_by_ue": [],
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
-    "VHS_KeepIntermediate": true,
-    "workflowRendererVersion": "LG"
+    "VHS_KeepIntermediate": true
   },
   "version": 0.4
 }
