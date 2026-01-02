@@ -1,7 +1,7 @@
 {
   "id": "8b7a9a57-2303-4ef5-9fc2-bf41713bd1fc",
   "revision": 0,
-  "last_node_id": 334,
+  "last_node_id": 336,
   "last_link_id": 587,
   "nodes": [
     {
@@ -13,7 +13,7 @@
       ],
       "size": [
         500.154541015625,
-        619.7855892541274
+        334
       ],
       "flags": {},
       "order": 4,
@@ -341,7 +341,7 @@
         "version": 1,
         "state": {
           "lastGroupId": 5,
-          "lastNodeId": 332,
+          "lastNodeId": 333,
           "lastLinkId": 582,
           "lastRerouteId": 0
         },
@@ -476,7 +476,7 @@
               370.28240966796875
             ],
             "flags": {},
-            "order": 8,
+            "order": 9,
             "mode": 0,
             "inputs": [
               {
@@ -765,7 +765,7 @@
               359.4031982421875
             ],
             "flags": {},
-            "order": 10,
+            "order": 11,
             "mode": 0,
             "inputs": [
               {
@@ -843,7 +843,7 @@
               338
             ],
             "flags": {},
-            "order": 6,
+            "order": 7,
             "mode": 0,
             "inputs": [
               {
@@ -1005,7 +1005,7 @@
               130
             ],
             "flags": {},
-            "order": 15,
+            "order": 16,
             "mode": 0,
             "inputs": [
               {
@@ -1049,7 +1049,7 @@
               336
             ],
             "flags": {},
-            "order": 12,
+            "order": 13,
             "mode": 0,
             "inputs": [
               {
@@ -1139,7 +1139,7 @@
               690
             ],
             "flags": {},
-            "order": 7,
+            "order": 8,
             "mode": 0,
             "inputs": [
               {
@@ -1326,7 +1326,7 @@
               503.12921142578125
             ],
             "flags": {},
-            "order": 11,
+            "order": 12,
             "mode": 0,
             "inputs": [
               {
@@ -1406,7 +1406,7 @@
               112
             ],
             "flags": {},
-            "order": 13,
+            "order": 14,
             "mode": 0,
             "inputs": [
               {
@@ -1443,7 +1443,7 @@
               326
             ],
             "flags": {},
-            "order": 9,
+            "order": 10,
             "mode": 0,
             "inputs": [
               {
@@ -1551,7 +1551,7 @@
               46
             ],
             "flags": {},
-            "order": 14,
+            "order": 15,
             "mode": 0,
             "inputs": [
               {
@@ -1627,6 +1627,32 @@
             ],
             "color": "#323",
             "bgcolor": "#535"
+          },
+          {
+            "id": 333,
+            "type": "MarkdownNote",
+            "pos": [
+              -5318.079951723008,
+              -2127.899498548424
+            ],
+            "size": [
+              553.6574522618693,
+              594.7504759758565
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Model links",
+            "properties": {
+              "widget_ue_connectable": {}
+            },
+            "widgets_values": [
+              "[Tutorial](https://www.nextdiffusion.ai/tutorials/create-lip-sync-videos-from-images-with-infinitetalk-in-comfyui)\n\n## Model links\n\nYou can find all the models on [Huggingface](https://huggingface.co).\n\n**Diffusion model**\n\n- [Wan2_1-InfiniteTalk-Single_fp8_e4m3fn_scaled_KJ.safetensors](https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/blob/main/InfiniteTalk/Wan2_1-InfiniteTalk-Single_fp8_e4m3fn_scaled_KJ.safetensors)\n- [Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors](https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors)\n\n**LoRA**\n\n- [lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors](https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors)\n\n**Text encoder**\n\n- [umt5-xxl-enc-bf16.safetensors](https://huggingface.co/Kijai/WanVideo_comfy/blob/main/umt5-xxl-enc-bf16.safetensors)\n\n**VAE**\n\n- [Wan2_1_VAE_bf16.safetensors](https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Wan2_1_VAE_bf16.safetensors)\n\n**CLIP Vision**\n\n- [clip_vision_h.safetensors](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/clip_vision/clip_vision_h.safetensors)\n\n**Wav2Vec**\n\n- [chinese-wav2vec2-base](https://huggingface.co/TencentGameMate/chinese-wav2vec2-base/tree/main)\n\nModel Storage Location\n\n```\n📁 ComfyUI/\n└── 📁 models/\n    ├── 📁 diffusion_models/\n    │   ├── Wan2_1-InfiniteTalk-Single_fp8_e4m3fn_scaled_KJ.safetensors\n    │   └── Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors\n    ├── 📁 vae/\n    │   └── Wan2_1_VAE_bf16.safetensors\n    ├── 📁 clip_vision/\n    │   └── clip_vision_h.safetensors\n    ├── 📁 text_encoders/\n    │   └── umt5-xxl-enc-bf16.safetensors\n    ├── 📁 loras/\n    │   └──lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors\n    └── 📁 transformers/\n        └── 📁 TencentGameMate/\n            └── 📁 chinese-wav2vec2-base/\n```\n"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
           }
         ],
         "groups": [
@@ -1914,13 +1940,6 @@
   },
   "config": {},
   "extra": {
-    "ds": {
-      "scale": 1,
-      "offset": [
-        5644.837764223008,
-        1840.9854360484242
-      ]
-    },
     "frontendVersion": "1.35.9",
     "workflowRendererVersion": "LG",
     "node_versions": {
@@ -1934,7 +1953,14 @@
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
-    "ue_links": []
+    "ue_links": [],
+    "ds": {
+      "scale": 1,
+      "offset": [
+        5772.701045473008,
+        1935.3057485484242
+      ]
+    }
   },
   "version": 0.4
 }
